@@ -1,0 +1,14 @@
+{
+  "name": "usb-service",
+  "version": "0.0.1",
+  "description": "USB audio input control service for avsr service",
+  "main": "usbIn.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-alsa-cardinfo": "^1.0.3"
+  }
+}
