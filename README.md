@@ -21,7 +21,7 @@ Activate the virtual environment:\
 Installing the python dependencies used:\
 ```pip install numpy sounddevice```
 
-##Improvements
+## Improvements
 
 To be able to adjust the volume level of the incoming signal, you need to add the following to **/etc/asound.conf**:
 ```
