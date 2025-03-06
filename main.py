@@ -1,37 +1,4 @@
 #!/usr/bin/env python3
-#import argparse
-#import numpy as np
-#import sounddevice as sd
-
-#duration = 60 * 60 #in seconds
-
-#def audio_callback(indata, frames, time, status):
-#   volume_norm = np.linalg.norm(indata) * 10
-#   print(volume_norm)
-#   print("|" * int(volume_norm))
-
-#parser = argparse.ArgumentParser(add_help=False)
-#parser.add_argument(
-#    '-l', '--list-devices', action='store_true',
-#    help='show list of audio devices and exit')
-#args, remaining = parser.parse_known_args()
-#if args.list_devices:
-#print(sd.query_devices())
-#    parser.exit(0)
-
-#stream = sd.InputStream(device=7, callback=audio_callback)
-#with stream:
-#   sd.sleep(duration * 1000)
-#with sd.Stream(device=(7, 4),
-#      samplerate=args.samplerate, blocksize=args.blocksize,
-#      dtype=args.dtype, latency=args.latency,
-#      channels=args.channels, callback=callback):
-#   print('#' * 80)
-#   print('press Return to quit')
-#   print('#' * 80)
-#   input()
-
-#!/usr/bin/env python3
 """Pass input directly to output.
 
 https://github.com/PortAudio/portaudio/blob/master/test/patest_wire.c

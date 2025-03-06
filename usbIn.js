@@ -26,9 +26,7 @@ if ('channels' in info) {
 		console.error(`stderr: ${data}`);
 	});
 	audio.on('close', (code) => {
-		console.log(
-			`audio завершился с кодом ${code}`
-		);
+		console.log(`audio ended with code: ${code}`);
 	});
 } else {
 	console.log(info);
