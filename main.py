@@ -51,16 +51,16 @@ def callback(indata, outdata, frames, time, status):
     if status:
         print(status)
     outdata[:] = indata
-    volume_norm = numpy.linalg.norm(indata) * 10
-    print(volume_norm)
-    print("|" * int(volume_norm))
+    #volume_norm = numpy.linalg.norm(indata) * 10
+    #print(volume_norm)
+    #print("|" * int(volume_norm))
 
 
 try:
     with sd.Stream(device=(args.input_device, args.output_device), samplerate=args.samplerate, blocksize=args.blocksize, dtype=args.dtype, latency=args.latency, channels=args.channels, callback=callback):
-        print('#' * 80)
-        print('press Return to quit')
-        print('#' * 80)
+        print('#' * 8)
+        # print('press Return to quit')
+        # print('#' * 80)
         input()
 except KeyboardInterrupt:
     parser.exit('')
